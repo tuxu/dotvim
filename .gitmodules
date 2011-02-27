@@ -52,3 +52,6 @@
 [submodule "bundle/vim-faq"]
 	path = bundle/vim-faq
 	url = https://github.com/vim-scripts/vim_faq.git
+[submodule "bundle/cute-python"]
+	path = bundle/cute-python
+	url = https://github.com/ehamberg/vim-cute-python.git
