@@ -14,6 +14,7 @@ set number
 set ruler
 set hidden
 set showcmd
+set autoread
 set visualbell t_vb=
 
 " Swap files should not clutter the project directory
@@ -36,6 +37,10 @@ set softtabstop=4
 set smarttab
 set expandtab
 set listchars=tab:▸\ ,eol:¬
+
+" Indentation
+set autoindent
+set smartindent
 
 " Nice text wrapping
 set wrap
