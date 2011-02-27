@@ -13,6 +13,8 @@ set bg=dark
 set number
 set ruler
 set hidden
+set showcmd
+set visualbell t_vb=
 
 " Swap files should not clutter the project directory
 set backupdir=~/.vim/backup
@@ -33,6 +35,7 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 set expandtab
+set listchars=tab:▸\ ,eol:¬
 
 " Nice text wrapping
 set wrap

@@ -1,6 +1,7 @@
 " General settings
 set cursorline
 set columns=100
+set visualbell t_vb=
 
 " Get rid of the toolbar
 set guioptions-=T
