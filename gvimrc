@@ -12,7 +12,7 @@ color jellybeans
 
 " Font
 if has("mac")
-    set guifont=Inconsolata:h12
+    set guifont=Inconsolata:h13
 else
     if has("unix")
         set guifont=Inconsolata\ Medium\ 12
