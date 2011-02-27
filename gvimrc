@@ -13,6 +13,10 @@ color jellybeans
 " Font
 if has("mac")
     set guifont=Inconsolata:h12
+else
+    if has("unix")
+        set guifont=Inconsolata\ Medium\ 12
+    endif
 endif
 
 if has("gui_macvim")
