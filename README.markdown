@@ -3,7 +3,8 @@ This is the Vim configuration I am currently using with [MacVim].
 Installation
 
     git clone git://github.com/tuxu/dotvim.git ~/.vim
-    git submodule update --init ~/.vim
+    cd ~/.vim
+    git submodule update --init
 
 Create symlinks:
 
