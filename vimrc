@@ -2,6 +2,7 @@
 set nocp
 
 " Setup pathogen
+filetype off
 silent! call pathogen#runtime_append_all_bundles()
 silent! call pathogen#helptags()
 
@@ -15,11 +16,21 @@ set ruler
 set hidden
 set showcmd
 set autoread
+set scrolloff=3
 set visualbell t_vb=
+set ttyfast
 
 " Swap files should not clutter the project directory
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+
+" Features requiring Vim >= 7.3
+if v:version > 702
+    " Relative line numbers :)
+    set relativenumber
+    " Save undo history
+    set undofile
+endif
 
 " Add a status bar
 set laststatus=2
@@ -54,6 +65,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set gdefault
+set showmatch
 
 " Tab completion
 set wildmode=list:longest,list:full
@@ -62,7 +75,24 @@ set wildignore+=*.o,.git
 " Key bindings
 set backspace=indent,eol,start
 let mapleader = ","
-map <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>g :GundoToggle<CR>
+" Unhighlight last search
+nnoremap <Leader><Space> :noh<CR>
+nnoremap <Leader>a :Ack
+" Re-hardwrap current paragraph
+nnoremap <Leader>q gqip
+" Reselect pasted text
+nnoremap <Leader>v V`]
+" Strip all whitespaces in the current file
+nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
+" Open split window and switch to it
+nnoremap <Leader>w <C-w>s<C-w>j
+" Navigating split windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Command-T
 let g:CommandTMaxHeight=20
