@@ -11,9 +11,10 @@ Create symlinks:
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
-Also, make sure to create a directory for Vim's backup files:
+Also, make sure to create a directory for Vim's backup and undo files:
 
     mkdir ~/.vim/backup
+    mkdir ~/.vim/undo
 
 Plugins are installed using Git submodules. To add one, type:
 

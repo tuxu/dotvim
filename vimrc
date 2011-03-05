@@ -30,6 +30,7 @@ if v:version > 702
     set relativenumber
     " Save undo history
     set undofile
+    set undodir=~/.vim/undo
 endif
 
 " Add a status bar
