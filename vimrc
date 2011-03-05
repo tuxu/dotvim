@@ -50,8 +50,7 @@ set expandtab
 set listchars=tab:▸\ ,eol:¬
 
 " Indentation
-set autoindent
-set smartindent
+set nosmartindent
 
 " Nice text wrapping
 set wrap
