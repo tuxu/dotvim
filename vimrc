@@ -89,10 +89,10 @@ nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 " Open split window and switch to it
 nnoremap <Leader>w <C-w>s<C-w>j
 " Navigating split windows
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <S-h> <C-w>h
+nnoremap <S-j> <C-w>j
+nnoremap <S-k> <C-w>k
+nnoremap <S-l> <C-w>l
 
 " Command-T
 let g:CommandTMaxHeight=20
